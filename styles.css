@@ -18,6 +18,7 @@
 body {
     box-sizing: border-box;
     overflow-x: hidden;
+  
 
 }
 *::before,
@@ -54,9 +55,11 @@ p {
 
 }
 .heading {
-    font-size: 800;
-    letter-spacing: 3px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    
 }
+
 span {
     color: var(--white);
     
@@ -64,12 +67,16 @@ span {
 .main {
     margin: 0 auto;
     width: 90%;
-   
+    margin-bottom: 10rem;
 }
+
+
 .cards_container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+
 }
+
 .card {
     border: 15px;
     display: flex;
@@ -83,7 +90,11 @@ span {
     border-radius: 15px;
     margin-bottom: 1rem;
     background-color: var(--green);
+    margin-bottom: 26px;
+    width: 100%;
+    
 }
+
 .card:last-of-type {
     margin-bottom: 6rem;
 }
@@ -94,7 +105,7 @@ span {
     cursor: pointer;
     position: absolute;
     top: -20px;
-    left: 250px;
+    left: 80%;
 
     cursor: pointer;
 
@@ -153,9 +164,8 @@ span {
     border-radius: 30px;
     font-size: 15px;
     cursor: pointer;
-    font-weight: 200;
-    font-family: sans-serif;
-
+    font-weight: 300;
+    font-family: var(--normalTextFont);
 }
 
 .card_tags p::before {
@@ -165,22 +175,33 @@ span {
 
 }
 .footer {
-    padding: 15px;
+   
     position: fixed;
     bottom: 0px;
-    left: 0px;
-    right: 0px;
+    right: 0;
+    left: 0;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(117, 106, 106, 0.8) -6px -2px 16px 0px;
     background-color: var(--darkRed);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
+@media (max-width: 662px) {
+    .footer {
+       width: auto;
+     
+    }
+}
 #nav {
-    list-style: none;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+@media (max-width: 662px) {
+    #nav {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
 }
 #nav a {
     vertical-align:middle;
@@ -188,7 +209,10 @@ span {
     text-decoration: none;
 }
 .current {
+    padding: 1%;
     border-bottom: 5px solid black;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 45px;
 }
 .image {
     display: block;
