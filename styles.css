@@ -17,8 +17,7 @@
 
 body {
     box-sizing: border-box;
-    overflow-x: hidden;
-  
+    overflow: hidden;
 
 }
 *::before,
@@ -174,40 +173,31 @@ span {
     font-weight: 800;
 
 }
-.footer {
-   
-    position: fixed;
-    bottom: 0px;
-    right: 0;
-    left: 0;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(117, 106, 106, 0.8) -6px -2px 16px 0px;
-    background-color: var(--darkRed);
-}
 
-@media (max-width: 662px) {
-    .footer {
-       width: auto;
-     
-    }
-}
 #nav {
-   padding: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-@media (max-width: 662px) {
-    #nav {
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-}
+    
 #nav a {
     vertical-align:middle;
-    margin: 45px;
+    padding: 15px;
     text-decoration: none;
 }
+
+.footer {
+
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(117, 106, 106, 0.8) -6px -2px 16px 0px;
+    background-color: var(--darkRed);
+    position: fixed;
+    bottom: 0;
+
+    left: 0px;
+    right: -1%;
+
+}
+
 .current {
     padding: 1%;
     border-bottom: 5px solid black;
