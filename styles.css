@@ -1,0 +1,145 @@
+:root {
+    --headingFont: 'Lilita One', cursive;
+    --normalTextFont: 'Zilla Slab', serif;
+    --blue: rgb(86, 182, 246);
+    --darkBlue: rgba(8, 33, 101, 0.847);
+    --yellow: rgba(252, 240, 23, 0.812);
+    --darkYellow: rgba(203, 164, 38, 0.877); 
+    --red: rgb(152, 25, 25);
+    --darkRed: rgba(96, 22, 22, 0.93);
+    --green: rgb(54, 177, 9);
+    --darkGreen: rgb(23, 94, 25);
+    --white: rgb(255, 255, 255);
+    --black: rgba(0, 0, 0, 0);
+
+}
+
+body {
+    box-sizing: border-box;
+
+}
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2 {
+    font-family: var(--headingFont);
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p {
+    font-family: var(--normalTextFont);
+    
+}
+
+.header {
+    background-color: var(--darkBlue);
+    padding: 15px;
+    margin-bottom: 5px;
+
+}
+.heading {
+    font-size: 800;
+    letter-spacing: 3px;
+}
+span {
+    color: var(--white);
+    text-transform: uppercase;
+
+}
+.main {
+    margin: 0 auto;
+    width: 90%;
+}
+.cards_container {
+    background-color: rgb(244, 247, 250);
+}
+.card {
+    border: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 10px;
+    position: relative;
+    border: 3px rgba(128, 128, 128, 0.252) solid;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.card_logo {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 275px;
+    cursor: pointer;
+
+}
+
+.card_content {
+    width: 100%;
+    text-align: center;
+}
+
+.card_content p {
+    font-size: 30px;
+}
+.btn {
+    border: none;
+    padding: 15px;
+    font-family: var(--normalTextFont);
+    font-weight: 100;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.btn:focus + .answer {
+   
+    display: block;
+    font-size: 45px;
+    font-weight: 800;
+}
+.answer {
+   
+   display: none;
+}
+
+.card_tags {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card_tags p {
+    background-color: var(--darkRed);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.card_tags p::before {
+    content:  '#';
+    font-size: 15Spx;
+    font-weight: 800;
+
+}
+.footer {
+    display: flex;
+    background-color: var(--darkBlue);
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.nav a {
+    margin: 20px;
+    vertical-align:middle;
+}
