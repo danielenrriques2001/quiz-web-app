@@ -1,13 +1,14 @@
 :root {
-    --headingFont:'Pacifico', cursive;
+    --headingFont: 'Patua One', cursive;
     --normalTextFont: 'Zilla Slab', serif;
+    --answerFont: 'Passion One', cursive;
     --blue: rgb(86, 182, 246);
-    --darkBlue: rgba(8, 33, 101, 0.847);
+    --darkBlue: rgb(8, 33, 101);
     --yellow: rgba(252, 240, 23, 0.812);
     --darkYellow: rgba(203, 164, 38, 0.877); 
-    --red: rgb(152, 25, 25);
+    --red: rgb(184, 50, 50);
     --darkRed: rgba(96, 22, 22, 0.93);
-    --green: rgb(54, 177, 9);
+    --green: rgb(113, 134, 105);
     --darkGreen: rgb(23, 94, 25);
     --white: rgb(255, 255, 255);
     --black: rgba(0, 0, 0, 0);
@@ -16,6 +17,7 @@
 
 body {
     box-sizing: border-box;
+    overflow-x: hidden;
 
 }
 *::before,
@@ -35,9 +37,18 @@ p {
     font-family: var(--normalTextFont);
     
 }
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
+.margin-b {
+    margin-bottom: 45px;
+}
 .header {
-    background-color: var(--darkBlue);
+    background-color: var(--red);
     padding: 15px;
     margin-bottom: 5px;
 
@@ -53,9 +64,11 @@ span {
 .main {
     margin: 0 auto;
     width: 90%;
+   
 }
 .cards_container {
-    background-color: rgb(244, 247, 250);
+    width: 90%;
+    margin: 0 auto;
 }
 .card {
     border: 15px;
@@ -68,7 +81,11 @@ span {
     position: relative;
     border: 3px rgba(128, 128, 128, 0.252) solid;
     border-radius: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    background-color: var(--green);
+}
+.card:last-of-type {
+    margin-bottom: 6rem;
 }
 .card:first-of-type {
     margin-top: 20px;
@@ -90,6 +107,12 @@ span {
 
 .card_content p {
     font-size: 30px;
+    
+}
+.card_content p:first-of-type {
+    background-color: var(--black);
+    font-weight: 700;
+    
 }
 .btn {
     border: none;
@@ -99,6 +122,9 @@ span {
     font-size: 25px;
     cursor: pointer;
     margin: 0 auto;
+    border-radius: 30px;
+    font-family: var(--answerFont);
+    font-weight: 100;
 }
 .btn:focus + .answer {
    
@@ -113,42 +139,110 @@ span {
 
 .card_tags {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
     width: 100%;
     cursor: pointer;
 }
 
 .card_tags p {
-    background-color: var(--darkRed);
+    background-color: var(--red);
     color: white;
     padding: 10px;
     border-radius: 30px;
     font-size: 15px;
     cursor: pointer;
+    font-weight: 200;
+    font-family: sans-serif;
+
 }
 
 .card_tags p::before {
     content:  '#';
-    font-size: 15Spx;
+    font-size: 15px;
     font-weight: 800;
 
 }
 .footer {
-    display: flex;
-    background-color: var(--darkBlue);
-    justify-content: center;
     padding: 15px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(117, 106, 106, 0.8) -6px -2px 16px 0px;
+    background-color: var(--darkRed);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.nav a {
-    margin: 20px;
+#nav {
+    list-style: none;
+}
+#nav a {
     vertical-align:middle;
+    margin: 45px;
+    text-decoration: none;
 }
-.nav a:active {
-    border: solid 1px red;
+.current {
+    border-bottom: 5px solid black;
 }
-.nav a:visited {
-    border: solid 3px blue;
+.image {
+    display: block;
+    width: 10rem;
+    border-radius: 50%;
+    border: 2px solid var(--darkGreen);
+}
+
+.profile_name {
+    
+}
+.about_me {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 15px 30px 15px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.button_container:hover {
+    background-color: var(--darkYellow);
+}
+.button_container p {
+    font-weight: 800;
+    font-size: 45px;
+    font-family: var(--answerFont);
+    margin: 0;
+    padding: 0;
+}
+.dark, .setting{
+    cursor: pointer;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+.text_about {
+    font-weight: 100;
+    font-size: 20px;
 }

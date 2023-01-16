@@ -11,24 +11,29 @@
     <!--Heading fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 
     <!--normal text font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--answer font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
     
     <title>Quiz App</title>
 </head>
 <body>
     <header class="header">
-        <h1 class="heading">quiz<span>app</span> </h1>
+        <h1 class="heading">harryPotter<span>Quiz</span> </h1>
     </header>
     <main class="main">
 
-        <div class="cards_container">
+        <section class="cards_container">
             <div class="card">
-            <iframe class="card_logo" src="/images/addicon.png" frameborder="0"></iframe>
+            <iframe title="logo" class="card_logo" src="/images/addicon.png" frameborder="0"></iframe>
             <p></p>
                 <div class="card_content">
                     <p>When is Harry Potter’s birthday?</p>
@@ -43,7 +48,7 @@
                
             </div>
             <div class="card">
-                <iframe class="card_logo" src="/images/addicon.png" frameborder="0"></iframe>
+                <iframe title="logo" class="card_logo" src="/images/addicon.png" frameborder="0"></iframe>
                 <p></p>
                     <div class="card_content">
                         <p>Where did Harry live in the Muggle world?</p>
@@ -58,7 +63,7 @@
                    
                 </div>
                 <div class="card">
-                    <iframe class="card_logo" src="/images/addicon.png" frameborder="0"></iframe>
+                    <iframe title="logo" class="card_logo" src="/images/addicon.png" frameborder="0"></iframe>
                     <p></p>
                         <div class="card_content">
                             <p> Who was Harry living with in the Muggle world?</p>
@@ -72,15 +77,15 @@
                         </div>
                        
                     </div>
-        </div>
+        </section>
 
     </main>
     
     <footer class="footer">
-        <nav class="nav">
-            <a href="index.html"><img src="images/home.png" alt=""></a>
-            <a href="#"><img src="images/benutzer.png" alt=""></a>
-            <a href="#"><img src="images/fragen.png" alt=""></a>
+        <nav id="nav">
+            <a aria-label="homepage"  class="current" href="index.html"><img src="images/home.png" alt=""></a>
+            <a aria-label="profilepage" href="profile.html"><img src="images/benutzer.png" alt=""></a>
+            <a aria-label="markspage" href="bookmarks.html"><img src="images/fragen.png" alt=""></a>
         </nav>
     </footer>
 </body>
