@@ -1,5 +1,5 @@
 :root {
-    --headingFont: 'Lilita One', cursive;
+    --headingFont:'Pacifico', cursive;
     --normalTextFont: 'Zilla Slab', serif;
     --blue: rgb(86, 182, 246);
     --darkBlue: rgba(8, 33, 101, 0.847);
@@ -48,8 +48,7 @@ p {
 }
 span {
     color: var(--white);
-    text-transform: uppercase;
-
+    
 }
 .main {
     margin: 0 auto;
@@ -71,11 +70,15 @@ span {
     border-radius: 15px;
     margin-bottom: 15px;
 }
+.card:first-of-type {
+    margin-top: 20px;
+}
 .card_logo {
     cursor: pointer;
     position: absolute;
-    top: 0;
-    left: 275px;
+    top: -20px;
+    left: 250px;
+
     cursor: pointer;
 
 }
@@ -142,4 +145,10 @@ span {
 .nav a {
     margin: 20px;
     vertical-align:middle;
+}
+.nav a:active {
+    border: solid 1px red;
+}
+.nav a:visited {
+    border: solid 3px blue;
 }
