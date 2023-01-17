@@ -1,0 +1,59 @@
+
+.card__profile--image {
+    display: block;
+    width: 10rem;
+    border-radius: 50%;
+    border: 2px solid var(--darkGreen);
+}
+
+.card__profile--name {
+    font-size: 45px;
+    font-weight: 300;
+}
+.card__profile--about {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.card__profile-des {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+.button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 15px 30px 15px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.button__container:hover {
+    background-color: var(--darkYellow);
+}
+.button__img--question, .button__img--darkmode {
+    font-weight: 800;
+    font-size: 45px;
+    font-family: var(--answerFont);
+    margin: 0;
+    padding: 0;
+}
+
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+.setting__btn{
+    cursor: pointer;
+}

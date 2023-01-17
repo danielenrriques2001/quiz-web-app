@@ -1,0 +1,16 @@
+.header {
+    background-color: var(--red);
+    padding: 15px;
+    margin-bottom: 5px;
+
+}
+.header__heading {
+    font-size: 45px;
+    letter-spacing: 1px;
+    
+}
+
+.header__heading--span {
+    color: var(--white);
+    
+}

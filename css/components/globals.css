@@ -1,0 +1,40 @@
+:root {
+    --headingFont: 'Patua One', cursive;
+    --normalTextFont: 'Zilla Slab', serif;
+    --answerFont: 'Passion One', cursive;
+    --blue: rgb(86, 182, 246);
+    --darkBlue: rgb(8, 33, 101);
+    --yellow: rgba(252, 240, 23, 0.812);
+    --darkYellow: rgba(203, 164, 38, 0.877); 
+    --red: rgb(184, 50, 50);
+    --darkRed: rgba(96, 22, 22, 0.93);
+    --green: rgb(113, 134, 105);
+    --darkGreen: rgb(23, 94, 25);
+    --white: rgb(255, 255, 255);
+    --black: rgba(0, 0, 0, 0);
+
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  
+
+}
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2 {
+    font-family: var(--headingFont);
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p {
+    font-family: var(--normalTextFont);
+    
+}
