@@ -2,7 +2,11 @@
     width: 80%;
     margin: 0 auto;
 }
-
+@media (min-width: 992px) {
+    .cards__container {
+        width: 40%;
+    }
+}
 .card {
     border: 15px;
     display: flex;
@@ -15,7 +19,7 @@
     border: 3px rgba(128, 128, 128, 0.252) solid;
     border-radius: 15px;
     margin-bottom: 1rem;
-    background-color: var(--green);
+    background-color: var(--violet);
     margin-bottom: 26px;
     width: 100%;
     
@@ -73,15 +77,16 @@
 }
 
 .card__content--tag{
-    background-color: var(--red);
+    background-color: var(--darkYellow);
     color: white;
     padding: 10px;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
-    font-weight: 300;
+    font-weight: 800;
     font-family: var(--normalTextFont);
 }
+
 
 .card__content--tag:before {
     content:  '#';
