@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/quizlogo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!--Heading fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+    <!--normal text font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--answer font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    
+    <title>Quiz App</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__heading">Database<span class="header__heading--span">Quiz</span> </h1>
+    </header>
+    <main class="main__tag">
+
+        <form class="form">
+
+            <div class="form__section">
+                <label class="form__label" for="question">Your Question is....</label>
+                <textarea minlength="5" maxlength="76" class="form__textarea" id="question" name="question"></textarea>
+              
+            </div>
+           <div class="form__section">
+                <label  class="form__label" for="answer">Your Answer is....</label>
+                <textarea maxlength="150" minlength="16" class="form__textarea"  id="answer" name="answer"></textarea>
+           </div>
+     
+           <div class="form__section">
+                <label  class="form__label" for="tag">Tag</label>
+                <input class="form__input" type="text" id="tag" name="tag">
+           </div>
+           
+           <button class="form__button" type="submit">Submit</button>
+        </form>
+
+        <div class="tag__list"></div>
+
+
+    </main>
+    
+    <footer class="footer">
+        <nav class="footer__nav">
+            <a class="footer__nav--link" aria-label="homepage" href="index.html"><img src="images/home.png" alt=""></a>
+            <a class="footer__nav--link" aria-label="profilepage" href="profile.html"><img src="images/benutzer.png" alt=""></a>
+            <a aria-label="markspage" class=" footer__nav--link" href="bookmarks.html"><img src="images/fragen.png" alt=""></a>
+            <a class="current footer__nav--link" aria-label="markspage" href="newtask.html"><img src="images/newtask1.png" alt="logo sobre la seccion de marcados"></a>
+        </nav>
+    </footer>
+    <script src="/app.js" defer></script>
+</body>
+
+    
+</html>

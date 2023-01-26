@@ -1,16 +1,37 @@
 .header {
     background-color: var(--red);
-    padding: 15px;
     margin-bottom: 5px;
-
+    padding: 10px;
+}
+@media (min-width: 992px) { 
+    .header {
+        
+        padding: 15px 15px;
+        margin-bottom: 1px;
+    }
+    
 }
 .header__heading {
-    font-size: 45px;
+    
     letter-spacing: 1px;
+    color: black;
+    letter-spacing: 10px;
+    
+}
+
+@media (min-width: 992px) {
+    .header__heading {
+        font-size: 45px;
+    }
     
 }
 
 .header__heading--span {
-    color: var(--white);
+    
+    background-color: var(--white);
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    font-weight: 800;
     
 }
