@@ -4,6 +4,13 @@
     align-items: center;
     gap: 15px;
 }
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
 .margin-b {
     margin-bottom: 45px;
@@ -21,3 +28,8 @@
     font-family: var(--answerFont);
     font-weight: 100;
 }
+
+.hidden {
+    display: none;
+}
+

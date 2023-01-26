@@ -5,7 +5,7 @@
     right: 0;
     left: 0;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(117, 106, 106, 0.8) -6px -2px 16px 0px;
-    background-color: var(--gray);
+    background-color: var(--green);
 }
 
 .footer__nav {

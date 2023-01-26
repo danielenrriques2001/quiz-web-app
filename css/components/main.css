@@ -2,3 +2,11 @@
     margin: 0 auto;
     
 }
+.main__tag {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+}
